@@ -1,0 +1,264 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Itim', cursive;
+}
+html, body{
+	width: 100%;
+	height: 100%;
+}
+nav{
+        width: 100%;
+        height: 15vh;
+        background: #e67e22;
+        color: #fff; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-transform: uppercase;
+}
+nav .logo{
+        width: 25%;
+        text-align: center;
+}
+ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+}
+ul li{
+       float: left;
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        opacity: .7;
+        line-height: 40px;
+        text-align: center;
+        font-size: 20px;
+        margin-right: 2px;
+} 
+ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+    
+}
+ul li a:hover{
+        background-color: green;
+}
+ul li ul li{
+        display: none;
+}
+ul li:hover ul li{
+        display: block;
+}
+.logo1 img{
+        float: left;
+        width: 120px;
+        height: auto;
+}
+.slidershow{
+        width: 700px;
+        height: 400px;
+        overflow: hidden;
+}
+.middle{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        transform: translate(-50%,-50%);
+}  
+.navigation{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+}
+.bar{
+        width: 50px;
+        height: 10px;
+        border: 2px solid #fff;
+        margin: 6px;
+        cursor: pointer;
+        transition: 0.4s;
+}
+.bar:hover{
+        background: #fff;
+    
+}
+input[name="r"]{
+        position: absolute;
+        visibility: hidden;
+    
+}
+.slides{
+        width: 500%;
+        height: 100%;
+        display: flex;
+}
+.slide{
+        width: 20%;
+        transition: 0.6s;
+}
+    .slide img{
+        width: 100%;
+        height:100%;
+}
+#r1:checked ~ .s1{
+	margin-left: 0%;
+}
+#r2:checked ~ .s1{
+	margin-left: -20%;
+}
+#r3:checked ~ .s1{
+	margin-left: -40%;
+}
+#r4:checked ~ .s1{
+	margin-left: -60%;
+}
+#r5:checked~ .s1{
+	margin-left: -80%;
+}
+.slidershower{
+	width: 800px;
+	height: 400px;
+	overflow: hidden;
+}
+.middleer{
+	position: absolute;
+	top: 110%;
+	left: 70%;
+	transform: translate(-50%,-50%);
+}
+.navigationer{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+ } 
+ .barer{
+	width: 50px;
+	height: 10px;
+	border: 2px solid #fff;
+	margin: 6px;
+	cursor: pointer;
+	transition: 0.4s;
+}
+.barer:hover{
+	background: #fff;
+
+}
+input[name="rer"]{
+	position: absolute;
+	visibility: hidden;
+
+}
+.slideser{
+	width: 500%;
+	height: 100%;
+	display: flex;
+}
+.slideer{
+	width: 20%;
+	transition: 0.6s;
+}
+.slideer img{
+	width: 100%;
+	height:100%;
+}
+#rer1:checked ~ .s2{
+	margin-left: 0%;
+}
+#rer2:checked ~ .s2{
+	margin-left: -20%;
+}
+#rer3:checked ~ .s2{
+	margin-left: -40%;
+} 
+#rer4:checked ~ .s2{
+	margin-left: -60%;
+}
+#rer5:checked~ .s2{
+	margin-left: -80%;
+}
+footer{
+	background: #f1f1f1;
+	padding: 90px 0;
+}
+.footer-container{
+	max-width: 1300px;
+	margin: auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap-reverse; 
+}
+.logos{
+	width: 180px;
+}
+.social-media{
+	margin: 20px 0;
+}
+.social-media a{
+	color: #c0392b;
+	margin: 25px;
+	font-size: 22px;
+	text-decoration: none;
+	transition: .3s linear;
+}
+.social-media a:hover{
+	color: #8e44ad;
+}
+.right-col h1{
+	font-size: 26px;
+}
+.border{
+	width: 100px;
+	height: 4px;
+	background:#ecf0f1; 
+}
+.newletter-form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}	
+.ter{
+	flex: 1;
+	padding: 18px 40px;
+	font-size: 16px;
+	color: #293043;
+	background: #ddd;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 30px;
+	min-width: 260px;
+}
+.btn{
+	padding: 8px 40px;
+	font-size: 16px;
+	color: #f1f1f1;
+	background: #c0392b;
+	border: none;
+	font-weight: 700;
+	outline: none;
+	border-radius: 30px;
+	margin-left: 20px;
+	cursor: pointer;
+	transition: opacity .3s linear;
+}
+.btn:hover{
+	opacity: .7;
+}
+.page-content{
+	min-height: 130vh;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

@@ -1,0 +1,89 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Itim', cursive;
+	}
+
+	
+h1{
+   text-align: center;
+   padding: 20px;
+  }
+  h2{
+   text-align: center;
+   padding: 20px;
+  }
+  .register
+{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	margin: 0px 0px 0px 430px;
+	color: white;
+	padding: 40px;
+	font-size: 18px;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.5);
+	border-radius:  10px;
+}
+
+ #register{
+ 	margin-left: 50px;
+ }
+ label{
+ 	color: white;
+ 	font-family: sans-serif;
+ 	font-size:18px;
+ 	font-style:italic;
+ }
+ #name{
+ 	width: 300px;
+ 	/* height:30px;*/
+ 	border:none;
+ 	border-radius: 3px;
+ 	outline: 0;
+ 	padding: 7px;
+ }
+ #ph{
+ 	width: 65px;
+ 	padding: 7px;
+ 	border:none;
+ 	border-radius: 3px;
+ 	outline: 0;
+ }
+ #number{
+ 	width: 500;
+ 	padding: 7px;
+ 	border: none;
+ 	border-radius: 3px;
+ 	outline: 0;
+ }
+ #mail{
+	width: 300px;
+	/* height:30px;*/
+	border:none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+#pass{
+	width: 300px;
+	/* height:30px;*/
+	border:none;
+	border-radius: 3px;
+	outline: 0;
+	padding: 7px;
+}
+ #sub{
+ 	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #03a9f4;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+ }

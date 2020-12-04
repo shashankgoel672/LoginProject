@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>LOGIN TO CONTINUE</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"	
+	</head>
+	<body>
+		<div class="box">
+			<img src="../css/1713924.png">
+		<h2>Login</h2>
+		<form class="form-signin" action="/login" method="POST">
+			<div class="inputBox">
+				<input type="text" id="username"  required=""  name="email">
+				<label>Username</label>
+			</div>
+			<div class="inputBox">
+				<input type="password" id="password"  required="" name="password">
+				<label>Password</label>
+			</div>
+			<input type="submit" name="" value="Submit"/>
+
+		</form>
+		</div>
+		<script>
+			const form = document.getElementById(reg-form)
+			form.addEventListener('submit', registerUser)
+
+			async function registerUser(event){
+				event.preventDefault()
+				const username = document.getElementById('username').value
+				const password = document.getElementById('password').value
+
+				const result = await fetch('/api/register',{
+					method: 'POST',
+					header: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify({
+						username,
+						password
+					})
+				}).then((res) => rs.json)
+
+				console.log(result)
+			}
+		</script>
+	</body>
+</html>
